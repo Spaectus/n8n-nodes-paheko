@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-paheko",
-	"version": "0.1.3",
+	"version": "0.2.0",
 	"description": "n8n nodes to integrate with Paheko (association management software)",
 	"license": "MIT",
 	"homepage": "https://github.com/Spaectus/n8n-nodes-paheko",
