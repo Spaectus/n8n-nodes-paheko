@@ -1,0 +1,13 @@
+dist/
+node_modules/
+
+.env
+*.py
+data/
+
+explo
+Makefile
+
+CLAUDE.md
+AGENTS.md
+.rtk

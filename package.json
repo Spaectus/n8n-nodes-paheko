@@ -1,0 +1,57 @@
+{
+	"name": "n8n-nodes-paheko",
+	"version": "0.1.3",
+	"description": "n8n nodes to integrate with Paheko (association management software)",
+	"license": "MIT",
+	"homepage": "https://github.com/Spaectus/n8n-nodes-paheko",
+	"keywords": [
+		"n8n-community-node-package",
+		"paheko"
+	],
+	"author": {
+		"name": "@",
+		"email": "contact@example.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Spaectus/n8n-nodes-paheko.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"link": "npm run build && cp -r dist/* ~/.n8n/custom/",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/PahekoApi.credentials.js",
+			"dist/credentials/PahekoApiRESTApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/PahekoBot/PahekoBot.node.js",
+			"dist/nodes/PahekoApiRest/PahekoApiRest.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.39.4",
+		"prettier": "3.8.3",
+		"release-it": "20.2.0",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

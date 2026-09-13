@@ -1,0 +1,12 @@
+{
+	"node": "n8n-nodes-paheko",
+	"nodeVersion": "1.0",
+	"categories": ["Development"],
+	"resources": {
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/Spaectus/n8n-nodes-paheko"
+			}
+		]
+	}
+}
